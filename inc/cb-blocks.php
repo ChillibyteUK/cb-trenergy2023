@@ -146,6 +146,15 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'cb_testimonials',
+            'title'				=> __('CB Testimonials'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_testimonials.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
         // acf_register_block_type(array(
         //     'name'				=> 'cb_notice',
         //     'title'				=> __('CB Notice'),
