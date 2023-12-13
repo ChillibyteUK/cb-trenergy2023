@@ -84,7 +84,7 @@
             grid-template-columns: 1fr 0.5fr;
         }
         .logo {
-            background-image: url(../img/timberrooms-logo--wo.svg);
+            background-image: url(../img/tr-energy-logo--wo.svg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -92,12 +92,6 @@
             aspect-ratio: 7 / 1;
             width: min(400px,70vw);
             max-width: 100%;
-        }
-        .logo--pod {
-            background-image: url(../img/timberrooms-logo-prefab--wo.svg);
-        }
-        .logo--golf {
-            background-image: url(../img/timberrooms-logo-golf--wo.svg);
         }
         .button-container {
             .navbar-toggler {
