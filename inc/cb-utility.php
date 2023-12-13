@@ -17,30 +17,33 @@ function split_lines($content)
 }
 
 add_shortcode('contact_address', function () {
-    $output = get_field('contact_address', 'options');
+    $output = get_field('contact_address', 'options') ?? null;
     return $output;
 });
 
 add_shortcode('contact_phone', function () {
-    if (get_field('contact_phone', 'options')) {
+    $phone = get_field('contact_phone','options') ?? null;
+    if ($phone != null) {
         return '<a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '">' . get_field('contact_phone', 'options') . '</a>';
     }
     return;
 });
 add_shortcode('contact_email', function () {
-    if (get_field('contact_email', 'options')) {
+    $email = get_field('contact_email','options') ?? null;
+    if ($email != null) {
         return '<a href="mailto:' . get_field('contact_email', 'options') . '">' . get_field('contact_email', 'options') . '</a>';
     }
     return;
 });
 add_shortcode('contact_email_icon', function () {
-    if (get_field('contact_email', 'options')) {
+    $email = get_field('contact_email','options') ?? null;
+    if ($email != null) {
         return '<a href="mailto:' . get_field('contact_email', 'options') . '"><i class="fas fa-envelope"></i></a>';
     }
     return;
 });
 add_shortcode('social_fb_icon', function () {
-    $social = get_field('social', 'options');
+    $social = get_field('social', 'options') ?? null;
     $fburl = $social['facebook_url'];
     if ($fburl != '') {
         return '<a href="' . $fburl . '" target="_blank"><i class="fab fa-facebook"></i></a>';
