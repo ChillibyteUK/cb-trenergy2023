@@ -1,0 +1,18 @@
+.testimonials {
+    &__body {
+        max-width: 62ch;
+    }
+    &__content {
+        text-align: center;
+        font-size: var(--fs-500);
+        font-weight: var(--fw-700);
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+        &::before, &::after {
+            content: '"';
+        }
+    }
+    &__cite {
+        text-align: center;
+    }
+}
