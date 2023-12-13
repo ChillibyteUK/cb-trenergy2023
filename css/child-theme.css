@@ -22746,7 +22746,7 @@ footer .container-xl {
 
 .btn-primary, body .gform_wrapper .gform_footer button, .btn-landing,
 .btn--accent {
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-weight: 600;
   background-color: var(--col-highlight-400);
@@ -22755,7 +22755,9 @@ footer .container-xl {
 }
 .btn-primary:hover, body .gform_wrapper .gform_footer button:hover, .btn-landing:hover,
 .btn--accent:hover {
-  background: #ef8e52;
+  transform: translateY(2px);
+  background: #0067db;
+  color: white;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
@@ -23575,6 +23577,13 @@ img.parallax-slider {
 }
 .pricing__link:hover {
   color: var(--col-highlight-400);
+}
+
+.buttons_block {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .wp-block-quote--cb {
