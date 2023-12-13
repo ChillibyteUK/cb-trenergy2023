@@ -85,6 +85,33 @@ a.anchor {
 //     font-weight: 600;
 // }
 
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: none;
+    li {
+        margin: 0 0.25rem;
+    }
+	
+    button {
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+        padding: 0;
+        
+        border: none;
+        border-radius: 100%;
+        background-color: var(--col-grey-200);
+        
+        text-indent: -9999px;
+    }
+    li.slick-active button {
+        background-color: var(--col-grey-400);
+    }
+}
 
 #breadcrumbs {
     font-size: 0.889rem;
