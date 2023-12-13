@@ -8,7 +8,7 @@ defined('ABSPATH') || exit;
         <div class="row">
             <div class="col-md-3">
                 <div class="mt-2 mb-4 text-center text-md-start">
-                    <img src="<?=get_stylesheet_directory_uri()?>/img/timberrooms-logo--wo.svg"
+                    <img src="<?=get_stylesheet_directory_uri()?>/img/tr-energy-logo--wo.svg"
                         class="footer__logo" alt="" width=300 height=60>
                     <div class="social-links">
                         <?=do_shortcode('[social_fb_icon]')?>
@@ -46,7 +46,7 @@ defined('ABSPATH') || exit;
     <div class="container py-2">
         <div class="d-flex flex-wrap justify-content-between">
             <div class="col-md-8 text-center text-md-start">
-                &copy; <?=date('Y')?> Timber Rooms Ltd. Registered in England, no. 10969771
+                &copy; <?=date('Y')?> TR Energy Ltd. Registered in England, no. 123456789
             </div>
             <div class="col-md-4 d-flex align-items-center justify-content-end flex-wrap gap-3">
                 <span><a href="/privacy-policy/">Privacy</a> & <a href="/cookie-policy/">Cookies</a></span> |
