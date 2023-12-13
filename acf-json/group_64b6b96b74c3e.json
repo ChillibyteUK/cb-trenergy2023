@@ -1,0 +1,51 @@
+{
+    "key": "group_64b6b96b74c3e",
+    "title": "Page Type",
+    "fields": [
+        {
+            "key": "field_64b6b96b78701",
+            "label": "Page Type",
+            "name": "page_type",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Bespoke": "Bespoke",
+                "Prefab": "Prefab",
+                "Golf": "Golf"
+            },
+            "default_value": "Bespoke",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1689842160
+}
