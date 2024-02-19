@@ -27,17 +27,18 @@ defined('ABSPATH') || exit;
                             href="mailto:<?=get_field('contact_email', 'options')?>"><?=get_field('contact_email', 'options')?></a>
                     </li>
                     <li><span class="fa-li"><i class="fa-solid fa-map-marker-alt"></i></span> <a
-                            href="<?=get_field('gmb_link','options')?>" target="_blank"><?=get_field('contact_address', 'options')?></a>
+                            href="<?=get_field('gmb_link', 'options')?>"
+                            target="_blank"><?=get_field('contact_address', 'options')?></a>
                     </li>
                 </ul>
             </div>
-            <!-- div class="col-md-3">
-                <div class="footer__heading">Locations</div>
-                <?=wp_nav_menu(array('theme_location' => 'footer_menu1'))?>
-            </div -->
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="footer__heading">Navigation</div>
                 <?=wp_nav_menu(array('theme_location' => 'footer_menu2'))?>
+            </div>
+            <div class="col-md-3">
+                <img src="<?=get_stylesheet_directory_uri()?>/img/napit-logo.svg"
+                    alt="NAPIT" width="100" height="185">
             </div>
         </div>
     </div>
@@ -46,7 +47,8 @@ defined('ABSPATH') || exit;
     <div class="container py-2">
         <div class="d-flex flex-wrap justify-content-between">
             <div class="col-md-8 text-center text-md-start">
-                &copy; <?=date('Y')?> TR Energy Sussex Ltd. Registered in England, no. 15193197
+                &copy; <?=date('Y')?> TR Energy
+                Sussex Ltd. Registered in England, no. 15193197
             </div>
             <div class="col-md-4 d-flex align-items-center justify-content-end flex-wrap gap-3">
                 <span><a href="/privacy-policy/">Privacy</a> & <a href="/cookie-policy/">Cookies</a></span> |
@@ -69,30 +71,30 @@ if (get_field('gtm_property', 'options')) {
 }
 ?>
 <script>
-const button = document.querySelector('.btn-landing');
-const footerTop = document.querySelector('#footer-top');
+    const button = document.querySelector('.btn-landing');
+    const footerTop = document.querySelector('#footer-top');
 
-const options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0
-};
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0
+    };
 
-const callback = (entries, observer) => {
-  const entry = entries[0]; // We're only observing one target
+    const callback = (entries, observer) => {
+        const entry = entries[0]; // We're only observing one target
 
-  if (entry.isIntersecting || entry.intersectionRatio > 0) {
-    // When the 'footer-top' element is in view
-    button.style.opacity = 0;
-  } else {
-    // When the 'footer-top' element is not in view
-    button.style.opacity = 1;
-  }
-};
+        if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            // When the 'footer-top' element is in view
+            button.style.opacity = 0;
+        } else {
+            // When the 'footer-top' element is not in view
+            button.style.opacity = 1;
+        }
+    };
 
-const observer = new IntersectionObserver(callback, options);
+    const observer = new IntersectionObserver(callback, options);
 
-observer.observe(footerTop);
+    observer.observe(footerTop);
 </script>
 </body>
 
