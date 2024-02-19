@@ -58,7 +58,7 @@ defined('ABSPATH') || exit;
         </div>
     </div>
 </div>
-<a href="/contact/" class="btn btn-landing">Book a Free Site Survey</a>
+<a href="/contact-us/" class="btn btn-landing">Book a Free Site Survey</a>
 <?php wp_footer();
 if (get_field('gtm_property', 'options')) {
     ?>
